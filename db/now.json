@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "wmdd-get-w5",
+  "env": {
+    "DBHOST": "mydatabase.c429pnqwz5rj.us-east-2.rds.amazonaws.com",
+    "DBPORT": "3306",
+    "DBUSER": "Myproject1",
+    "DBPASSWORD": "Myproject1",
+    "DBNAME": "movies"
+  },
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
